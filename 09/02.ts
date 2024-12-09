@@ -49,8 +49,6 @@ function getFirstSpace(fs: FileSystem[], minSize: number) {
 }
 
 function insertSpace(fs: FileSystem[], index: number, size: number) {
-  const copy = [...fs];
-
   fs.splice(index, 0, {
     id: '.',
     size,
